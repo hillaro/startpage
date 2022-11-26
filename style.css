@@ -1,0 +1,64 @@
+
+body {
+    background-color:burlywood;
+    margin:0;
+    font-family: "Lato", sans-serif;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    width:300px;
+    background-color:white;
+    position:fixed;
+    height:100%;
+    overflow:auto;
+}
+.navbar li {
+    cursor:pointer;
+    display:block;
+    color:red;
+    padding:10px;
+    text-decoration:none;
+    text-align:center;
+}
+
+    /*fix this up*/
+.navbar li:hover {
+    background-color:grey;
+    color:white;
+}
+
+.navbar li:active {
+    background-color:pink;
+    color:black;
+}
+div.content {
+    margin-left: 300px;
+    padding: 1px 16px;
+    height: 0;
+    
+}
+
+@media screen and (max-width: 700px){
+    .navbar {
+        width: 100%;
+        height:auto;
+        position: relative;
+    }
+        .navbar li {
+            float: left;
+        }
+        div.content {
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    .navbar li{
+        text-align: center;
+        float: none;
+    }
+}
+
